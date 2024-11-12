@@ -33,7 +33,7 @@ function App() {
     passwordGenerator()
   },[length,numberAllowed,charAllowed,passwordGenerator])
   return (
-    <div className='w-full max-w-md mx-auto shadow-md rounded-md px-4 py-3 my-3 bg-gray-800 text-orange-500'>
+    <div className='w-full max-w-md mx-auto shadow-md rounded-md px-4 py-3 my-3 bg-gray-800 text-lime-500'>
     <h1 className='text-white text-4xl text-center my-3'>Password generator</h1>
     
     <div className='flex shadow rounded-lg overflow-hidden mb-4'>
@@ -52,13 +52,13 @@ function App() {
     </button>
     </div>
 
-    <div className='flex text-sm gap-x-2'>
-        <div className='flex items-center gap-x-1'>
+    <div className='flex flex-col  gap-x-2'>
+        <div className='flex items-center gap-x-1 mx-6'>
         <input type="range"
         min={8}
-        max={100} 
+        max={20} 
         value={length}
-        className='cursor-pointer'
+        className='cursor-pointer w-9/12'
         onChange={(e)=>{setlength(e.target.value)}}
         />
 
